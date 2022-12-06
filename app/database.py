@@ -23,12 +23,12 @@ user_name = 'date_app_user'
 #host = 'dpg-ce74bekgqg4eemouqsmg-a.oregon-postgres.render.com'
 host = 'dpg-ce74bekgqg4eemouqsmg-a'
 db_name = 'date_app'
-SQLALCHEMY_DATABASE_URL =  f"postgres://{user_name}:{password}@{host}/{db_name}"
+SQLALCHEMY_DATABASE_URL =  f"postgresql://{user_name}:{password}@{host}/{db_name}"
 
 
 
 engine = create_engine(
-        f"postgresql://{user_name}:{password}@{host}/{db_name}"
+        SQLALCHEMY_DATABASE_URL
     #f"postgresql://{user_name}:{password}@{host}:5433/{db_name}
     # f"postgresql://postgres:indomitables123@localhost/dateapp"
     # SQLALCHEMY_DATABASE_URL
