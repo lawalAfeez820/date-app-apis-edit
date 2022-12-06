@@ -18,16 +18,16 @@ cloudinary.config(
   api_secret = "KotkJF_mNQQxvQiAQFFF9zFC4a0" 
 )
 
-password = 'kJ6d2ZWySSKr9KdW8mdPkDihQC3MGso9'
+password = 'kJ6d2ZWySSkr9KdW8mdPkDihQC3MGso9'
 user_name = 'date_app_user'
-host = 'dpg-ce74bekgqg4eemouqsmg-a'
+host = 'dpg-ce74bekgqg4eemouqsmg-a.oregon-postgres.render.com'
 db_name = 'date_app'
-SQLALCHEMY_DATABASE_URL =  f"postgresql://{user_name}:{password}@{host}:{5432}/{db_name}"
+SQLALCHEMY_DATABASE_URL =  f"postgresql://{user_name}:{password}@{host}/{db_name}"
 
 
 
 engine = create_engine(
-        f"postgresql://{user_name}:{password}@{host}:{5432}/{db_name}"
+        f"postgresql://{user_name}:{password}@{host}/{db_name}"
     #f"postgresql://{user_name}:{password}@{host}:5433/{db_name}
     # f"postgresql://postgres:indomitables123@localhost/dateapp"
     # SQLALCHEMY_DATABASE_URL
