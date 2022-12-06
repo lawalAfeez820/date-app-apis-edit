@@ -20,7 +20,7 @@ cloudinary.config(
 
 password = 'kJ6d2ZWySSKr9KdW8mdPkDihQC3MGso9'
 user_name = 'date_app_user'
-host = 'dpg-ce74bekgqg4eemouqsmg-a'
+host = 'dpg-ce74bekgqg4eemouqsmg-a.oregon-postgres.render.com'
 db_name = 'date_app'
 SQLALCHEMY_DATABASE_URL =  f"postgresql://{user_name}:{password}@{host}:{5432}/{db_name}"
 
